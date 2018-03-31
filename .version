@@ -1,0 +1,4 @@
+docker 17.12.1-ce
+ruby 2.4.3
+postgres 9.5.8
+redis 3.2
