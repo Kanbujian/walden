@@ -1,0 +1,17 @@
+redis:
+  env_vars: &env_vars
+    host: "<% ENV[REDIS_HOST] || 127.0.0.1 "
+    port: "<% ENV[REDIS_PORT] || 6379 "
+    db: "<% ENV[REDIS_PORT] || 0 "
+
+  development:
+    host: 127.0.0.1
+    port: 6379
+    db: 0
+
+  test:
+    <<: *env_vars
+
+  production:
+    <<: *env_vars
+  
