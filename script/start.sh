@@ -2,7 +2,7 @@
 echo "hello world"
 
 # start redis
-sudo docker run -d --name redis -v redis-storage:/data redis:3.2
+sudo docker run -d --name redis -p 127.0.0.1:6379:6379 -v redis-storage:/data redis:3.2
 echo 'redis started .....'
 
 # query the redis data 
